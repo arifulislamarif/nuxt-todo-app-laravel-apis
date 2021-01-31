@@ -80,5 +80,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  // data () {
+  //   return {
+  //     name: '',
+  //     email: ''
+  //   }
+  // },
+  // computed: {
+  //   students () {
+  //     return this.$store.state.studentData
+  //   }
+  // },
+  mounted () {
+    this.$store.dispatch('studentData')
+  },
+  // methods: {
+  //   studentFormSubmit () {
+  //     this.$store.commit('studentAdd', { name: this.name, email: this.email })
+  //     this.name = null
+  //     this.email = null
+  //   },
+  //   delete_todo (id) {
+  //     this.$store.state.students.splice(id, 1)
+  //   }
+  // }
+}
 </script>
